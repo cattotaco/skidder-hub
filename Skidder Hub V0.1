@@ -1,0 +1,278 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local Window = Rayfield:CreateWindow({
+   Name = "skidder hub",
+   LoadingTitle = "Skidder Hub",
+   LoadingSubtitle = "by CattoTaco",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "cattotacoskids"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "amongus", -- The Discord invite code, do not include discord.gg/
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Sirius Hub",
+      Subtitle = "Key System",
+      Note = "Join the discord (discord.gg/sirius)",
+      FileName = "SiriusKey",
+      SaveKey = true,
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "Hello"
+   },
+})
+
+local Tab = Window:CreateTab("main skidded scripts", 12094426053) -- Title, Ima
+
+local headlessbro = Tab:CreateButton({
+    Name = "esp script",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/FRMQbKuE", true))()
+        Rayfield:Notify({
+         Title = "script activated!",
+         Content = "noice",
+         Duration = 6.5,
+         Image = 4483362458,
+         Actions = { -- Notification Buttons
+            Ignore = {
+               Name = "Okay!",
+               Callback = function()
+               print("epic")
+            end    
+         },
+         Noice = {
+          Name = "Ur gay",
+          Callback = function()
+              Rayfield:Notify({
+              Title = "oh.",
+              Content = "i see :(",
+              Duration = 1.5,
+         Image = 4483362458,
+         })
+          end
+      },
+         }
+         
+      })
+    end,
+ })
+ 
+local Tab2 = Window:CreateTab("Visuals", 4483362458) -- Title, Ima
+
+local headlessbro = Tab2:CreateButton({
+   Name = "perm headless (both r6 and r15!)",
+   Callback = function()
+    while wait() do
+      
+        me = game:GetService("Players").LocalPlayer.Character
+        if me:FindFirstChild("UpperTorso") and me:FindFirstChild("LowerTorso") and me:FindFirstChild("Humanoid") then
+         me.Head.MeshId = "rblxassetid://693931"
+        elseif me:FindFirstChild("Torso") then
+   me.Head.Transparency = 1 -- Yeah whatever it work if its also nil 
+   me.Head.face:Destroy()
+end   
+        end
+      
+  end,
+})
+local KORBLOXbro = Tab2:CreateButton({
+    Name = "perm korblox (R15 ONLY)",
+    Callback = function()
+        while true do
+
+            local ply = game.Players.LocalPlayer
+            local chr = ply.Character
+            game:WaitForChild(chr)
+            wait(0.1)
+            chr.RightLowerLeg.MeshId = "902942093"
+            chr.RightLowerLeg.Transparency = "1"
+            chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+            chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+            chr.RightFoot.MeshId = "902942089"
+            chr.RightFoot.Transparency = "1"
+            
+        end
+        Rayfield:Notify({
+         Title = "script activated!",
+         Content = "noice",
+         Duration = 6.5,
+         Image = 4483362458,
+         Actions = { -- Notification Buttons
+            Ignore = {
+               Name = "Okay!",
+               Callback = function()
+               print("epic")
+            end    
+         },
+         Noice = {
+          Name = "Ur gay",
+          Callback = function()
+              Rayfield:Notify({
+              Title = "oh.",
+              Content = "i see :(",
+              Duration = 1.5,
+         Image = 4483362458,
+         })
+          end
+      },
+         }
+         
+      })
+    end,
+ })
+ local realanims = Tab2:CreateButton({
+    Name = "real animations script",
+    Callback = function()
+        
+Rayfield:Notify({
+   Title = "script activated!",
+   Content = "noice",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("epic")
+      end    
+   },
+   Noice = {
+    Name = "Ur gay",
+    Callback = function()
+        Rayfield:Notify({
+        Title = "oh.",
+        Content = "i see :(",
+        Duration = 1.5,
+   Image = 4483362458,
+   })
+    end
+},
+   }
+   
+})
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LunarWareOP/Animation-Changer-Source/main/Script", true))()
+    end,
+ })
+ local Tab3 = Window:CreateTab("among us characters", 4483362458) -- Title, Ima
+ local amongus = Tab3:CreateButton({
+    Name = "among us char",
+    Callback = function()
+     
+		local ply = game.Players.LocalPlayer
+		local chr = ply.Character
+		for i,v in pairs(chr:GetChildren()) do 
+			if v:IsA("Accessory") then
+				v:Destroy()
+			end
+		end
+		for i,a in pairs(chr.Head:GetChildren()) do
+			if a:IsA("Decal") then
+				a:Destroy() 
+			end
+		end
+
+		chr.UpperTorso.Transparency = 1
+		chr.LowerTorso.Transparency = 1
+		chr.LeftFoot.Transparency = 1
+		chr.LeftLowerLeg.Transparency = 1
+		chr.LeftUpperLeg.Transparency = 1
+		chr.RightFoot.Transparency = 1
+		chr.RightLowerLeg.Transparency = 1
+		chr.RightUpperLeg.Transparency = 1
+		chr.LeftHand.Transparency = 1
+		chr.LeftLowerArm.Transparency = 1
+		chr.LeftUpperArm.Transparency = 1
+		chr.RightHand.Transparency = 1
+		chr.RightLowerArm.Transparency = 1
+		chr.RightUpperArm.Transparency = 1
+		chr.Head.Transparency = 1
+		chr.HumanoidRootPart.Transparency = 0
+
+
+	local hrp = chr:WaitForChild("HumanoidRootPart")
+	hrp.BrickColor = BrickColor.new("Sea green")
+	local fuckingmesh = Instance.new("SpecialMesh")
+	fuckingmesh.VertexColor = Vector3.new(0,255,0)
+	fuckingmesh.Name = "green"
+		fuckingmesh.Parent = hrp
+		fuckingmesh.TextureId = "1"
+		fuckingmesh.MeshId = 'rbxassetid://6789346871'
+		fuckingmesh.Scale = Vector3.new(0.15000000596046448, 0.1300000101327896, 0.1300000101327896)
+      Rayfield:Notify({
+         Title = "script activated!",
+         Content = "noice",
+         Duration = 6.5,
+         Image = 4483362458,
+         Actions = { -- Notification Buttons
+            Ignore = {
+               Name = "Okay!",
+               Callback = function()
+               print("epic")
+            end    
+         },
+         Noice = {
+          Name = "Ur gay",
+          Callback = function()
+              Rayfield:Notify({
+              Title = "oh.",
+              Content = "i see :(",
+              Duration = 1.5,
+         Image = 4483362458,
+         })
+          end
+      },
+         }
+         
+      })
+         
+    end,
+ })
+ 
+local Dropdown = Tab3:CreateDropdown({
+   Name = "Character Material",
+   Options = {"ForceField","Neon","Plastic"},
+   CurrentOption = "ForceField",
+   Flag = "Dropdown1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(option)
+   -- The function that takes place when the selected option is changed
+   -- The variable (Option) is a string for the value that the dropdown was changed to
+   end,
+})
+local Tab4 = Window:CreateTab("anti-lock", 4483362458) -- Title, Ima
+local antilock = Tab4:CreateButton({
+   Name = "antilock script 4 da hood",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/reallykaren/newlink/main/skiddasdid'))()
+       Rayfield:Notify({
+        Title = "script activated!",
+        Content = "noice",
+        Duration = 6.5,
+        Image = 4483362458,
+        Actions = { -- Notification Buttons
+           Ignore = {
+              Name = "Okay!",
+              Callback = function()
+              print("epic")
+           end    
+        },
+        Noice = {
+         Name = "Ur gay",
+         Callback = function()
+             Rayfield:Notify({
+             Title = "oh.",
+             Content = "i see :(",
+             Duration = 1.5,
+        Image = 4483362458,
+        })
+         end
+     },
+        }
+        
+     })
+   end,
+})
+
+Rayfield:LoadConfiguration()
